@@ -1,0 +1,12 @@
+{
+  "name": "debug",
+  "scripts": {
+    "test": "pnpm run pkg && pnpm @org/pkg",
+    "pkg": "pnpm exec pkg",
+    "org": "pnpm exec @org/pkg"
+  },
+  "devDependencies": {
+    "pkg": "workspace:*",
+    "@org/pkg": "workspace:*"
+  }
+}
